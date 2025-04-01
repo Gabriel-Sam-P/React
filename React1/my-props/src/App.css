@@ -1,0 +1,17 @@
+.struct{
+
+    text-align: center;
+    text-transform: initial;
+    margin-left: 40%;
+    margin-top: 10%;
+    
+}
+
+.head{
+    background-color:#664;
+    align-items: center;
+}
+
+.body{
+    background-color: beige;
+}
