@@ -5,16 +5,13 @@ const Page4 = () => {
 
   const handleChange = (event) => {
     setInputValue(event.target.value); 
+
+    console.log("Hello")
   };
 
   return (
     <div>
-      <input 
-        type="text" 
-        value={inputValue} 
-        onChange={handleChange} 
-        placeholder="Type something" 
-      />
+      <input type="text" value={inputValue} onChange={handleChange} placeholder="Type something"/>
       <h1>{inputValue}</h1> 
     </div>
   );
