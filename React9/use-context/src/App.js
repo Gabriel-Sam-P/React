@@ -49,12 +49,15 @@ import React from 'react'
 
 import Main from "./Component/Main";
 
+import TMain from './Component/TMain';
+
 
 
 const App = () => {
   return (
     <div>
       <Main/>
+      <TMain/>
     </div>
   )
 }

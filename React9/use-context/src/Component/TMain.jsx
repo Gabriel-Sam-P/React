@@ -1,9 +1,13 @@
 
-import React, { useState } from 'react';
+import React, { createContext, useState } from "react";
 
 import {Button} from '@mui/material'
 
-import Mshow from './Mshow'
+
+import Tthree from './Tthree'
+
+
+export const TextContext = createContext();
 
 const Main = () => {
 
@@ -21,7 +25,7 @@ const Main = () => {
     <>
         
 
-        <input 
+      <input 
         type="text" 
         value={input} 
         onChange={(e) => setinput(e.target.value)} 
@@ -29,9 +33,16 @@ const Main = () => {
 
         <Button onClick={handleClick} variant='contained'>click</Button>
 
-        <Mshow one={output}/>
+
+
+
+
+      <TextContext.Provider value={output}>
+        <Tthree />
+      </TextContext.Provider>
+        
     </>
   )
 }
 
-export default Main
+export default Main ;
